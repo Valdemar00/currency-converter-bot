@@ -9,7 +9,7 @@ class CryptoConverter:
     @staticmethod
     def get_price(base: str, quote: str, amount: str):
         if quote == base:
-            raise APIException(f'Невозможно перевести одинаковые валюты {base}.')
+            raise APIException(f'Невозможно конвертировать одинаковые валюты {base}.')
 
         try:
             quote_ticker = keys[quote]
